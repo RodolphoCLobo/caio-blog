@@ -18,7 +18,8 @@
 $primary-color: color("blue", "lighten-2") !default;
 $secondary-color: color("yellow", "base") !default;
 @import 'materialize';
-@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 @font-face {
    font-family: 'Gothic';
    src: url('letter-gothic-std-bold.otf');
