@@ -8,10 +8,13 @@ default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+  host: localhost
+  port: 5432
 
 development:
   <<: *default
   username: rodolpho
+  password: 151159
   database: caio_blog_development
 
 # Warning: The database defined as "test" will be erased and
@@ -20,6 +23,7 @@ development:
 test:
   <<: *default
   username: rodolpho
+  password: 151159
   database: caio_blog_test
 
 production:
